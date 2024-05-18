@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu" class="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Főoldal</title>
+</head>
+
+<body>
+    <a id="top"></a>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li class="bal">Üdvözlünk!</li>
+                <li class="kipozicional" onclick="hideAll()"> <a href="#">Ugrás a tartalomra</a></li>
+                <li class="jobb hideOnMobile">Szolgáltatások:</li>
+                <li class="hideOnMobile"><a href="autoberles.html"><img src="autokolcsonzo.png" alt="Autókölcsönző"></a></li>
+                <li class="hideOnMobile"><a href="autoszerelo.html "><img src="autoszerelologo.jpg" alt="Autókszerelő"></a></li>
+                <li class="hideOnMobile"><a href="kozmetika.html"><img src="autokozmetika.png" alt="Autókozmetika"></a></li>
+                <li class="hideOnPC" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    
+            </ul>
+            <ul class="sidenav">
+                <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li>Szolgáltatások:</li>
+                <li><a href="autoberles.html"><img src="autokolcsonzo.png" alt="Autókölcsönző"></a></li>
+                <li><a href="autoszerelo.html"><img src="autoszerelologo.jpg" alt="Autókszerelő"></a></li>
+                <li><a href="kozmetika.html"><img src="autokozmetika.png" alt="Autókozmetika"></a></li>
+    
+            </ul>
+        </nav>
+        <script>
+            function showSideBar(){
+                const sidenav = document.querySelector('ul.sidenav')
+                sidenav.style.display = 'flex';
+            }
+            function hideSideBar(){
+                const sidenav = document.querySelector('ul.sidenav')
+                sidenav.style.display = 'none';
+            }
+            function hideAll(){
+                const header = document.querySelector('header')
+                header.style.display = 'none';
+                const footer = document.querySelector('footer')
+                footer.style.display = 'none';
+            }
+        </script>
+    </header>
+    
+    <div class="main">
+        <article>
+        <h1> Németh Sándor & Ostrom Bálint vállalkozása</h1>
+        <p class="bev">
+            Probléma van az autóval? Nem úgy megy, mint régen? Esetleg széppé varázsolná külsejét/belsejét, de az
+            otthoni eszközeivel szinte lehetetlen?
+            Több családtagnak is ugyanazon a napon kellene a közös autó? <br>
+            <b> Mi ezeket a problémákat megoldjuk Önnek!</b>
+        </p>
+        
+    
+        <hr>
+        
+        <section>
+        <h2>Történet</h2>
+       
+        
+
+        <p class="Nunito padding">Már több, mint 4 éve, hogy összefogtak és megalapították a közös vállalkozásukat, egy
+            autókölcsönzést.
+            Előtte külön-külön működtek, Németh Sándor, mint <i>autószerelő</i>, és Ostrom Bálint, mint
+            <i>autókozmetikus</i>.
+        </p>
+        </section>
+        <div class="kepek">
+            <div>
+                <p><a href="autoszerelologo.jpg" class="bigger"><img src="autoszerelologo.jpg" alt="Autószerelő" title=" Német Sándor Autószerelő Mester logója"></a></p>
+                <p class="megnev"> N.S. Autószerelő logója </p>
+            </div>
+            <div>
+                <p><a href="autokozmetika.png" class="bigger"><img src="autokozmetika.png" alt="Autókozmetika" title="Ostrom Autókozmetika logója"></a>
+                </p>
+                <p class="megnev">O. autokozmetika logója</p>
+            </div>
+        </div>
+        <br>
+        <div class="kepek">
+            <div>
+                <p><a href="autokolcsonzo.png" class="bigger"><img src="autokolcsonzo.png" alt="Autókölcsönző" title="Autókölcsönzés Zalalövő logója"></a></p>
+                <p class="megnev">Autókölcsönzés Zalalövő logója</p>
+            </div>
+        </div>
+        <hr>
+        <section>
+        <h2> És remekül működik</h2>
+        <div class="padding">
+            <p class="Nunito"> Azt hihetik, hogy csak a turisták bérelnek autót, de miért ne lehetne hétköznapi célokra
+                is?
+                Hiszen a könyvet is ki szoktuk kölcsönözni a könyvtárból.
+                Van olyan vevőnk, aki éves szinten bérli ki az egyik kocsinkat.
+                Hisz gondoljon bele, egy folyamatosan szervizelt és kívül-belül szép állapotban lévő autókról beszélünk.
+                Szerintem nem kell magyaráznom a miértjét.
+                <br>
+                <br>
+                <i>Mind a 3 szolgáltatást megtalálja fent a <b>“Szolgáltatások”</b> után.</i>
+            </p>
+
+            <a href="#top" class="vissza"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>Vissza a lap tetejére</a>
+               
+        </div>
+        </section>
+        <br>
+        <br>
+    </article>
+</div>
+<footer>
+    Author: Németh Tamás <br>
+    <a href="urlap.html" class="fo">Töltsd ki űrlapunkat!</a>
+</footer>
+</body>
+
+</html>
